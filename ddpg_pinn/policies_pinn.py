@@ -1,9 +1,9 @@
 # DDPG can be view as a special case of TD3
-from stable_baselines.td3.policies import CnnPolicy, MlpPolicy, MultiInputPolicy, Actor, ContinuousCritic, TD3Policy  # noqa:F401
+from stable_baselines_Newton.td3.policies import CnnPolicy, MlpPolicy, MultiInputPolicy, Actor, ContinuousCritic, TD3Policy  # noqa:F401
 # Add explicit imports for base classes you'll customize
-from stable_baselines.common.policies import BasePolicy
-from stable_baselines.common.torch_layers import BaseFeaturesExtractor
-from stable_baselines.common.preprocessing import get_action_dim
+from stable_baselines_Newton.common.policies import BasePolicy
+from stable_baselines_Newton.common.torch_layers import BaseFeaturesExtractor
+from stable_baselines_Newton.common.preprocessing import get_action_dim
 from gymnasium import spaces
 from typing import Optional
 import torch

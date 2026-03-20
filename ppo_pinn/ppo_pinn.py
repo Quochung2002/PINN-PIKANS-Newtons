@@ -13,9 +13,9 @@ from stable_baselines3.common.type_aliases import GymEnv, MaybeCallback, Schedul
 from stable_baselines3.common.utils import explained_variance, get_schedule_fn, obs_as_tensor
 from stable_baselines3.ppo.ppo import PPO
 
-from stable_baselines.common.policies import ActorCriticCnnPolicy, MultiInputActorCriticPolicy
-from stable_baselines.common.type_aliases import RolloutReturn
-from stable_baselines.ppo_pinn.policies_pinn import KANActorCriticPolicy
+from stable_baselines_Newton.common.policies import ActorCriticCnnPolicy, MultiInputActorCriticPolicy
+from stable_baselines_Newton.common.type_aliases import RolloutReturn
+from stable_baselines_Newton.ppo_pinn.policies_pinn import KANActorCriticPolicy
 
 SelfPPOPINN = TypeVar("SelfPPOPINN", bound="PPO_PINN")
 

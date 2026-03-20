@@ -9,7 +9,7 @@ from stable_baselines3.common.type_aliases import GymEnv, MaybeCallback, Schedul
 from stable_baselines3.common.utils import get_parameters_by_name, polyak_update
 from stable_baselines3.td3.td3 import TD3
 from stable_baselines3.td3.policies import TD3Policy
-from stable_baselines.td3_pinn.policies_pinn import KANTD3Policy
+from stable_baselines_Newton.td3_pinn.policies_pinn import KANTD3Policy
 
 SelfTD3 = TypeVar("SelfTD3", bound="TD3_PINN")
 
@@ -87,7 +87,7 @@ class TD3_PINN(TD3):
         policy_delay: int = 2,
         target_policy_noise: float = 0.2,
         target_noise_clip: float = 0.5,
-        physics_type: str = "newtons_laws",
+        physics_type: str = "newtons_laws",  # 'none', 'energy_conservation', 'newtons_laws', 'navier_stokes'
         lambda_phys: float = 0.1,
         mass: float = 1.0,
         gravity: float = 9.81,

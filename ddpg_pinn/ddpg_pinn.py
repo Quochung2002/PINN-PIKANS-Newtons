@@ -5,12 +5,12 @@ import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
 
-from stable_baselines.common.buffers import ReplayBuffer
-from stable_baselines.common.noise import ActionNoise
-from stable_baselines.common.type_aliases import GymEnv, MaybeCallback, Schedule
-from stable_baselines.td3.policies import TD3Policy
-from stable_baselines.td3.td3 import TD3
-from stable_baselines.common.utils import polyak_update
+from stable_baselines_Newton.common.buffers import ReplayBuffer
+from stable_baselines_Newton.common.noise import ActionNoise
+from stable_baselines_Newton.common.type_aliases import GymEnv, MaybeCallback, Schedule
+from stable_baselines_Newton.td3.policies import TD3Policy
+from stable_baselines_Newton.td3.td3 import TD3
+from stable_baselines_Newton.common.utils import polyak_update
 
 SelfDDPG = TypeVar("SelfDDPG", bound="DDPG_PINN")
 

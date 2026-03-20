@@ -13,7 +13,7 @@ from stable_baselines3.common.utils import explained_variance, obs_as_tensor
 from stable_baselines3.a2c.a2c import A2C
 
 from stable_baselines3.common.policies import ActorCriticCnnPolicy, MultiInputActorCriticPolicy
-from stable_baselines.a2c_pinn.policies_pinn import KANActorCriticPolicy
+from stable_baselines_Newton.a2c_pinn.policies_pinn import KANActorCriticPolicy
 
 SelfA2CPINN = TypeVar("SelfA2CPINN", bound="A2C_PINN")
 

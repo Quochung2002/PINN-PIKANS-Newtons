@@ -8,7 +8,7 @@ from stable_baselines3.common.policies import ActorCriticPolicy
 from stable_baselines3.common.torch_layers import BaseFeaturesExtractor
 from stable_baselines3.common.preprocessing import get_action_dim
 
-from stable_baselines.common.policies import ActorCriticCnnPolicy, MultiInputActorCriticPolicy
+from stable_baselines_Newton.common.policies import ActorCriticCnnPolicy, MultiInputActorCriticPolicy
 
 class KANLayer(nn.Module):
     def __init__(self, in_dim: int, out_dim: int):
